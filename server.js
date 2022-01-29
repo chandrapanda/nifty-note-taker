@@ -1,7 +1,6 @@
-const { captureRejectionSymbol } = require('events');
 const express = require('express');
-const { readFileSync, fstat } = require('fs');
-const { parse } = require('path');
+const fs = require('fs');
+// const { parse } = require('path');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -44,11 +43,11 @@ app.post('/api/notes', (req, res) => {
           body: newNote,
         };
 
-        console.log(savedNotes);
         savedNotes.push(newNote);
-        console.log(savedNotes);
-
-        // fs.writeFile('Main.db.json', )
+      
+        fs.writeFile('Main/db.json', JSON.stringify(savedNotes), function(err) {
+            if (err) throw err;
+        });
     
         console.log(response);
         res.status(201).json(response);
