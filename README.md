@@ -1,2 +1,54 @@
-# nifty-note-taker
-An application that can be used to write and save notes
+# Nifty Note Taker
+
+## Description
+This application can be used to take notes, view saved notes, and delete notes.
+## Table of Contents
+1. [Installation](#installation) 
+2. [Usage](#usage)
+3. [Contributing](#contributing)
+4. [Tests](#tests)
+5. [Questions](#questions)
+
+## User Story
+
+```
+AS A small business owner
+I WANT to be able to write and save notes
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
+```
+
+
+## Acceptance Criteria
+
+```
+GIVEN a note-taking application
+WHEN I open the Note Taker
+THEN I am presented with a landing page with a link to a notes page
+WHEN I click on the link to the notes page
+THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+WHEN I enter a new note title and the note’s text
+THEN a Save icon appears in the navigation at the top of the page
+WHEN I click on the Save icon
+THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+WHEN I click on an existing note in the list in the left-hand column
+THEN that note appears in the right-hand column
+WHEN I click on the Write icon in the navigation at the top of the page
+THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+```
+
+## Installation 
+Required NPM installations include: fs, express, uuid, node
+## Usage 
+Users can write, save, and delete notes for any purpose
+## Contributing 
+Chandra Holt contributed to this project, with front-end code developed by Bootcampspot
+## Tests 
+N/A
+## Questions
+### GitHub
+[GitHub](https://www.github.com/chandrapanda) 
+### Email
+chandra_holt@hotmail.com
+## License 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [This application is licensed under MIT](https://opensource.org/licenses/MIT)
